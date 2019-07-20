@@ -7,7 +7,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class GreetingController {
     @GetMapping("/mercury")
-    public void mercury(Model model) {
+    String mercury() {
+        return "mercury";
     }
 
     @GetMapping("/venus")
